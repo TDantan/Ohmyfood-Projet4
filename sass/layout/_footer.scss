@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 186px;
+    height: 172px;
     background-color: #353535;
     color: white;
     padding: 22px 25px;
@@ -17,5 +17,16 @@ footer {
     ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
+
+        li {
+            padding-bottom: 12px;
+
+
+            .fa-solid {
+                padding-right: 10px;
+            }
+        }
+
     }
 }
