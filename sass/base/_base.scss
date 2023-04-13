@@ -1,5 +1,5 @@
 body {
-    margin :0;
+    margin: 0;
 }
 
 a {
@@ -11,4 +11,28 @@ a {
     width: 100%;
     height: 63px;
     background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa-solid {
+        padding-right: 20px;
+        font-size: small;
+    }
+}
+
+.search { 
+    background-color: $backgroundcolor1 ;
+    width: 100%;
+    height: 320px;
+    h1 {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+    p {
+        padding: 0px 10px;
+        text-align: center;
+        font-weight: 300;
+    }
 }
