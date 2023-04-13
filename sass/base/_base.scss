@@ -8,7 +8,6 @@ a {
 }
 
 .location {
-    width: 100%;
     height: 63px;
     background-color: #EAEAEA;
     display: flex;
@@ -21,24 +20,62 @@ a {
     }
 }
 
-.search { 
+.search {
     background: $backgroundcolor1 ;
-    width: 100%;
     height: 275px;
+
     h1 {
-        margin: 0;
-        padding: 25px;
         text-align: center;
+        font-size: 24px;
     }
+
     p {
-        margin:0;
+        margin: 0;
         padding: 0px 10px;
         text-align: center;
         font-weight: 300;
     }
+
     a {
         margin: 30px;
         display: flex;
         justify-content: center;
+    }
+}
+
+.functioning {
+    padding-left: 8.5%;
+
+    .functioning_cards {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+
+        .functioning_cards_step {
+            display: flex;
+
+            p {}
+
+            div {
+                background-color: $backgroundcolor1 ;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                display: flex;
+                align-items: center;
+                width: 322.5px;
+                height: 72px;
+                border-radius: 20px;
+                margin-top: 20px;
+
+                .fa-solid {
+                    padding-left: 20px;
+                }
+
+                h2 {
+                    flex-grow: 0.8;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
