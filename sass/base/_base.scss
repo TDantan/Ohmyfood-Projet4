@@ -7,6 +7,8 @@ a {
     color: black;
 }
 
+/* partie home page */
+
 .location {
     height: 63px;
     background-color: #EAEAEA;
@@ -140,4 +142,53 @@ a {
         }
 
     }
+}
+
+/* Partie restaurant */
+
+main {
+
+    margin-bottom: -60px;
+
+    .restaurant_img {
+        img {
+            width: 100%;
+            height: 275px;
+        }
+    }
+
+    .menu {
+        background-color: #F7F7F7;
+        border-radius: 40px 40px 0px 0px;
+        position: relative;
+        bottom: 60px;
+        padding: 25px;
+
+        .menu_title {
+            display: flex;
+            justify-content: space-between;
+
+            h1 {
+                padding-top: 10px;
+                font-family: 'shrikhand';
+                font-weight: 400;
+                size: 28px;
+            }
+
+            .fa-heart {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .full_menu {
+
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 }

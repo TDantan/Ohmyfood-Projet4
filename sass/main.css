@@ -7,6 +7,7 @@ a {
   color: black;
 }
 
+/* partie home page */
 .location {
   height: 63px;
   background-color: #EAEAEA;
@@ -122,6 +123,40 @@ a {
 .restaurants .restaurants_cards .restaurants_cards_container .card-content .fa-heart {
   display: flex;
   align-items: center;
+}
+
+/* Partie restaurant */
+main {
+  margin-bottom: -60px;
+}
+main .restaurant_img img {
+  width: 100%;
+  height: 275px;
+}
+main .menu {
+  background-color: #F7F7F7;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  bottom: 60px;
+  padding: 25px;
+}
+main .menu .menu_title {
+  display: flex;
+  justify-content: space-between;
+}
+main .menu .menu_title h1 {
+  padding-top: 10px;
+  font-family: "shrikhand";
+  font-weight: 400;
+  size: 28px;
+}
+main .menu .menu_title .fa-heart {
+  display: flex;
+  align-items: center;
+}
+main .menu a {
+  display: flex;
+  justify-content: center;
 }
 
 * {
