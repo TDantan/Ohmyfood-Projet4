@@ -89,6 +89,7 @@ a {
 }
 .restaurants .restaurants_cards {
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .restaurants .restaurants_cards .restaurants_cards_container {
   width: 100%;
@@ -113,7 +114,7 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 211px;
+  height: 260px;
 }
 .restaurants .restaurants_cards .restaurants_cards_container .card-content {
   display: flex;
