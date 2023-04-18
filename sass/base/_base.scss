@@ -145,6 +145,42 @@ a {
     }
 }
 
+@media screen and (min-width: 992px) {
+
+    .search h1 {
+        font-size: 40px;
+    }
+
+    .search p {
+        font-size: 18px;
+    }
+
+    .restaurants, .functioning {
+        padding: 40px;
+    }
+
+    .functioning .functioning_cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .functioning_cards_step {
+        width: 25%;
+    }
+
+    .restaurants .restaurants_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .restaurants .restaurants_cards .restaurants_cards_container {
+        width: 45%;
+        margin-top: 40px;
+    }
+}
+
 /* Partie restaurant */
 
 main {
@@ -222,7 +258,7 @@ main {
                     display: flex;
                     justify-content: space-between;
 
-                    p { 
+                    p {
                         margin: 0px;
                     }
 
