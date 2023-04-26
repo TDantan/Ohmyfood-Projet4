@@ -44,7 +44,7 @@ a {
         display: flex;
         justify-content: center;
     }
-    
+
 }
 
 .functioning {
@@ -157,7 +157,8 @@ a {
         font-size: 18px;
     }
 
-    .restaurants, .functioning {
+    .restaurants,
+    .functioning {
         padding: 40px;
     }
 
@@ -202,7 +203,10 @@ main {
         border-radius: 40px 40px 0px 0px;
         position: relative;
         bottom: 60px;
-        padding: 25px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 25px;
+        padding-bottom: 25px;
 
         .menu_title {
             display: flex;
@@ -237,6 +241,7 @@ main {
                 border-bottom: 3px solid #99E2D0;
             }
 
+            /*
             .card-content {
                 justify-content: space-around;
                 display: flex;
@@ -271,6 +276,81 @@ main {
                         font-size: 15px;
                     }
                 }
+            } */
+
+            .card-content {
+
+                display: flex;
+                background-color: #FFFFFF;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                height: 72px;
+                border-radius: 20px;
+                margin-top: 20px;
+                padding: 0;
+                width: auto;
+
+                &:hover {
+                    .card-check {
+                         width: 20%;
+                         transition: all 0.3s;
+                        .fa-circle-check {
+                            transform: scale(1);
+                            transition :all 0.4s;
+                        }
+                    
+                    }
+                 }
+
+                .block-text {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 10px;
+
+                    .card-title {
+                        h3 {
+                            margin: 0px;
+                        }
+
+                    }
+
+                    .card-text {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            margin: 0px;
+                        }
+
+                        .price {
+                            margin: 0px;
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .card-check {
+
+                    transition: all 0.5s ease-in-out;
+                    border-bottom-right-radius: 20px;
+                    width: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                    background-color: #99E2D0;
+                    margin-left: 10px;
+                    border-top-right-radius: 20px;
+
+                    .fa-circle-check {
+                        transform: scale(0);
+                        color: white;
+                    }
+
+                }
             }
         }
 
@@ -284,4 +364,14 @@ main {
     }
 }
 
+}
+
+@media screen and (min-width: 992px) { 
+
+    .menu {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    
 }

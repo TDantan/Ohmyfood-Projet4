@@ -135,7 +135,8 @@ a {
   .search p {
     font-size: 18px;
   }
-  .restaurants, .functioning {
+  .restaurants,
+  .functioning {
     padding: 40px;
   }
   .functioning .functioning_cards {
@@ -171,7 +172,10 @@ main .menu {
   border-radius: 40px 40px 0px 0px;
   position: relative;
   bottom: 60px;
-  padding: 25px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 main .menu .menu_title {
   display: flex;
@@ -191,6 +195,42 @@ main .menu .full_menu .starters,
 main .menu .full_menu .dishes,
 main .menu .full_menu .desserts {
   margin-bottom: 40px;
+  /*
+  .card-content {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      height: 72px;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      width: auto;
+
+      .card-title {
+          h3 {
+              margin: 0px;
+          }
+
+      }
+
+      .card-text {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+              margin: 0px;
+          }
+
+          .price {
+              margin: 0px;
+              font-weight: 700;
+              font-size: 15px;
+          }
+      }
+  } */
 }
 main .menu .full_menu .starters h2,
 main .menu .full_menu .dishes h2,
@@ -204,40 +244,78 @@ main .menu .full_menu .desserts h2 {
 main .menu .full_menu .starters .card-content,
 main .menu .full_menu .dishes .card-content,
 main .menu .full_menu .desserts .card-content {
-  justify-content: space-around;
   display: flex;
-  flex-direction: column;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  width: 100%;
   height: 72px;
   border-radius: 20px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 0;
   width: auto;
 }
-main .menu .full_menu .starters .card-content .card-title h3,
-main .menu .full_menu .dishes .card-content .card-title h3,
-main .menu .full_menu .desserts .card-content .card-title h3 {
+main .menu .full_menu .starters .card-content:hover .card-check,
+main .menu .full_menu .dishes .card-content:hover .card-check,
+main .menu .full_menu .desserts .card-content:hover .card-check {
+  width: 20%;
+  transition: all 0.3s;
+}
+main .menu .full_menu .starters .card-content:hover .card-check .fa-circle-check,
+main .menu .full_menu .dishes .card-content:hover .card-check .fa-circle-check,
+main .menu .full_menu .desserts .card-content:hover .card-check .fa-circle-check {
+  transform: scale(1);
+  transition: all 0.4s;
+}
+main .menu .full_menu .starters .card-content .block-text,
+main .menu .full_menu .dishes .card-content .block-text,
+main .menu .full_menu .desserts .card-content .block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+main .menu .full_menu .starters .card-content .block-text .card-title h3,
+main .menu .full_menu .dishes .card-content .block-text .card-title h3,
+main .menu .full_menu .desserts .card-content .block-text .card-title h3 {
   margin: 0px;
 }
-main .menu .full_menu .starters .card-content .card-text,
-main .menu .full_menu .dishes .card-content .card-text,
-main .menu .full_menu .desserts .card-content .card-text {
+main .menu .full_menu .starters .card-content .block-text .card-text,
+main .menu .full_menu .dishes .card-content .block-text .card-text,
+main .menu .full_menu .desserts .card-content .block-text .card-text {
   display: flex;
   justify-content: space-between;
 }
-main .menu .full_menu .starters .card-content .card-text p,
-main .menu .full_menu .dishes .card-content .card-text p,
-main .menu .full_menu .desserts .card-content .card-text p {
+main .menu .full_menu .starters .card-content .block-text .card-text p,
+main .menu .full_menu .dishes .card-content .block-text .card-text p,
+main .menu .full_menu .desserts .card-content .block-text .card-text p {
   margin: 0px;
 }
-main .menu .full_menu .starters .card-content .card-text .price,
-main .menu .full_menu .dishes .card-content .card-text .price,
-main .menu .full_menu .desserts .card-content .card-text .price {
+main .menu .full_menu .starters .card-content .block-text .card-text .price,
+main .menu .full_menu .dishes .card-content .block-text .card-text .price,
+main .menu .full_menu .desserts .card-content .block-text .card-text .price {
   margin: 0px;
   font-weight: 700;
   font-size: 15px;
+}
+main .menu .full_menu .starters .card-content .card-check,
+main .menu .full_menu .dishes .card-content .card-check,
+main .menu .full_menu .desserts .card-content .card-check {
+  transition: all 0.5s ease-in-out;
+  border-bottom-right-radius: 20px;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #99E2D0;
+  margin-left: 10px;
+  border-top-right-radius: 20px;
+}
+main .menu .full_menu .starters .card-content .card-check .fa-circle-check,
+main .menu .full_menu .dishes .card-content .card-check .fa-circle-check,
+main .menu .full_menu .desserts .card-content .card-check .fa-circle-check {
+  transform: scale(0);
+  color: white;
 }
 main .menu a {
   display: flex;
@@ -246,6 +324,12 @@ main .menu a {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 992px) {
+  .menu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 * {
   font-family: "roboto";
   font-weight: 500;
@@ -277,6 +361,7 @@ p {
 }
 
 .btn_violet {
+  font-size: 17px;
   border-radius: 25px;
   width: 218px;
   height: 50px;
@@ -284,6 +369,11 @@ p {
   color: white;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease-in-out;
+}
+.btn_violet:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
 }
 
 footer {
