@@ -159,12 +159,13 @@ a {
 
     .restaurants,
     .functioning {
-        padding: 40px;
+        padding-right: 8%;
+        padding-left: 8%;
     }
 
     .functioning .functioning_cards {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .functioning_cards_step {
@@ -241,43 +242,6 @@ main {
                 border-bottom: 3px solid #99E2D0;
             }
 
-            /*
-            .card-content {
-                justify-content: space-around;
-                display: flex;
-                flex-direction: column;
-                background-color: #FFFFFF;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-                width: 100%;
-                height: 72px;
-                border-radius: 20px;
-                margin-top: 20px;
-                padding: 10px;
-                width: auto;
-
-                .card-title {
-                    h3 {
-                        margin: 0px;
-                    }
-
-                }
-
-                .card-text {
-                    display: flex;
-                    justify-content: space-between;
-
-                    p {
-                        margin: 0px;
-                    }
-
-                    .price {
-                        margin: 0px;
-                        font-weight: 700;
-                        font-size: 15px;
-                    }
-                }
-            } */
-
             .card-content {
 
                 display: flex;
@@ -287,19 +251,20 @@ main {
                 border-radius: 20px;
                 margin-top: 20px;
                 padding: 0;
-                width: auto;
+
 
                 &:hover {
                     .card-check {
-                         width: 20%;
-                         transition: all 0.3s;
+                        width: 20%;
+                        transition: all 0.3s;
+
                         .fa-circle-check {
                             transform: scale(1);
-                            transition :all 0.4s;
+                            transition: all 0.4s;
                         }
-                    
+
                     }
-                 }
+                }
 
                 .block-text {
 
@@ -366,12 +331,22 @@ main {
 
 }
 
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
 
     .menu {
         margin-left: 10%;
         margin-right: 10%;
+
+        .menu_title {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .full_menu {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
 
-    
+
 }

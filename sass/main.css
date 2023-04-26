@@ -137,11 +137,12 @@ a {
   }
   .restaurants,
   .functioning {
-    padding: 40px;
+    padding-right: 8%;
+    padding-left: 8%;
   }
   .functioning .functioning_cards {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .functioning_cards_step {
     width: 25%;
@@ -195,42 +196,6 @@ main .menu .full_menu .starters,
 main .menu .full_menu .dishes,
 main .menu .full_menu .desserts {
   margin-bottom: 40px;
-  /*
-  .card-content {
-      justify-content: space-around;
-      display: flex;
-      flex-direction: column;
-      background-color: #FFFFFF;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-      width: 100%;
-      height: 72px;
-      border-radius: 20px;
-      margin-top: 20px;
-      padding: 10px;
-      width: auto;
-
-      .card-title {
-          h3 {
-              margin: 0px;
-          }
-
-      }
-
-      .card-text {
-          display: flex;
-          justify-content: space-between;
-
-          p {
-              margin: 0px;
-          }
-
-          .price {
-              margin: 0px;
-              font-weight: 700;
-              font-size: 15px;
-          }
-      }
-  } */
 }
 main .menu .full_menu .starters h2,
 main .menu .full_menu .dishes h2,
@@ -251,7 +216,6 @@ main .menu .full_menu .desserts .card-content {
   border-radius: 20px;
   margin-top: 20px;
   padding: 0;
-  width: auto;
 }
 main .menu .full_menu .starters .card-content:hover .card-check,
 main .menu .full_menu .dishes .card-content:hover .card-check,
@@ -326,6 +290,14 @@ main .menu a {
 
 @media screen and (min-width: 992px) {
   .menu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu .menu_title {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu .full_menu {
     margin-left: 10%;
     margin-right: 10%;
   }
