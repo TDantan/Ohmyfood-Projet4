@@ -137,9 +137,35 @@ a {
                 justify-content: space-between;
                 padding: 0px 15px;
 
-                .fa-heart {
+                .heart_icon {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin-right: 20px;
+    
+                    .fa-regular {
+                        position: absolute;
+                    }
+    
+    
+                    .fa-solid {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 0.6s;
+                        color: transparent;
+                        background-image: $backlineargradient;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                    }
+    
+                    &:hover .fa-solid {
+                        opacity: 1;
+                    }
+    
+                    &:hover .fa-regular {
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -239,6 +265,7 @@ main {
                     color: transparent;
                     background-image: $backlineargradient;
                     background-clip: text;
+                    -webkit-background-clip: text;
                 }
 
                 &:hover .fa-solid {
