@@ -415,6 +415,9 @@ footer ul li {
 footer ul li .fa-solid {
   padding-right: 10px;
 }
+footer ul li a {
+  color: white;
+}
 
 @media screen and (min-width: 992px) {
   footer {
@@ -425,6 +428,7 @@ footer ul li .fa-solid {
   }
   footer p {
     padding-left: 70px;
+    padding-bottom: 6px;
   }
   footer ul {
     display: flex;
