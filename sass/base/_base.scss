@@ -311,25 +311,20 @@ main {
             .card-content {
 
                 display: flex;
+                justify-content: space-between;
                 background-color: #FFFFFF;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
                 height: 72px;
                 border-radius: 20px;
                 margin-top: 20px;
                 padding: 0;
+                overflow: hidden;
 
 
                 &:hover {
                     .card-check {
-                        width: 20%;
-                        transition: all 0.3s;
-
-
-                        .fa-circle-check {
-                            transform: scale(1);
-                            transition: all 0.4s;
-                        }
-
+                        margin-right: 0;
+                        transition: all 0.6s;
                     }
                 }
 
@@ -344,6 +339,9 @@ main {
                     .card-title {
                         h3 {
                             margin: 0px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
                         }
 
                     }
@@ -354,32 +352,36 @@ main {
 
                         p {
                             margin: 0px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
                         }
 
                         .price {
                             margin: 0px;
+                            margin-left: 16px;
                             font-weight: 700;
                             font-size: 15px;
+                            text-overflow: clip;
+                            overflow: visible;
                         }
                     }
                 }
 
                 .card-check {
 
-                    transition: all 0.5s ease-in-out;
                     border-bottom-right-radius: 20px;
-                    width: 0;
+                    width: 20%;
+                    margin-right: -20%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     font-size: 24px;
-                    background-color: #99E2D0;
-                    margin-left: 10px;
+                    background-color: #99E2D0;           
                     border-top-right-radius: 20px;
 
                     .fa-circle-check {
                         color: white;
-                        transform: scale(0);
                     }
 
                 }

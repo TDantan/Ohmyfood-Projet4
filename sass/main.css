@@ -260,24 +260,20 @@ main .menu .full_menu .starters .card-content,
 main .menu .full_menu .dishes .card-content,
 main .menu .full_menu .desserts .card-content {
   display: flex;
+  justify-content: space-between;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   height: 72px;
   border-radius: 20px;
   margin-top: 20px;
   padding: 0;
+  overflow: hidden;
 }
 main .menu .full_menu .starters .card-content:hover .card-check,
 main .menu .full_menu .dishes .card-content:hover .card-check,
 main .menu .full_menu .desserts .card-content:hover .card-check {
-  width: 20%;
-  transition: all 0.3s;
-}
-main .menu .full_menu .starters .card-content:hover .card-check .fa-circle-check,
-main .menu .full_menu .dishes .card-content:hover .card-check .fa-circle-check,
-main .menu .full_menu .desserts .card-content:hover .card-check .fa-circle-check {
-  transform: scale(1);
-  transition: all 0.4s;
+  margin-right: 0;
+  transition: all 0.6s;
 }
 main .menu .full_menu .starters .card-content .block-text,
 main .menu .full_menu .dishes .card-content .block-text,
@@ -292,6 +288,9 @@ main .menu .full_menu .starters .card-content .block-text .card-title h3,
 main .menu .full_menu .dishes .card-content .block-text .card-title h3,
 main .menu .full_menu .desserts .card-content .block-text .card-title h3 {
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 main .menu .full_menu .starters .card-content .block-text .card-text,
 main .menu .full_menu .dishes .card-content .block-text .card-text,
@@ -303,33 +302,37 @@ main .menu .full_menu .starters .card-content .block-text .card-text p,
 main .menu .full_menu .dishes .card-content .block-text .card-text p,
 main .menu .full_menu .desserts .card-content .block-text .card-text p {
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 main .menu .full_menu .starters .card-content .block-text .card-text .price,
 main .menu .full_menu .dishes .card-content .block-text .card-text .price,
 main .menu .full_menu .desserts .card-content .block-text .card-text .price {
   margin: 0px;
+  margin-left: 16px;
   font-weight: 700;
   font-size: 15px;
+  text-overflow: clip;
+  overflow: visible;
 }
 main .menu .full_menu .starters .card-content .card-check,
 main .menu .full_menu .dishes .card-content .card-check,
 main .menu .full_menu .desserts .card-content .card-check {
-  transition: all 0.5s ease-in-out;
   border-bottom-right-radius: 20px;
-  width: 0;
+  width: 20%;
+  margin-right: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   background-color: #99E2D0;
-  margin-left: 10px;
   border-top-right-radius: 20px;
 }
 main .menu .full_menu .starters .card-content .card-check .fa-circle-check,
 main .menu .full_menu .dishes .card-content .card-check .fa-circle-check,
 main .menu .full_menu .desserts .card-content .card-check .fa-circle-check {
   color: white;
-  transform: scale(0);
 }
 main .menu a {
   display: flex;
