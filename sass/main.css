@@ -93,6 +93,7 @@ a {
 }
 .restaurants .restaurants_cards .restaurants_cards_container {
   width: 100%;
+  height: 241px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -116,12 +117,19 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 260px;
+  height: 180px;
 }
 .restaurants .restaurants_cards .restaurants_cards_container .card-content {
   display: flex;
   justify-content: space-between;
   padding: 0px 15px;
+}
+.restaurants .restaurants_cards .restaurants_cards_container .card-content .card-txt .card-title {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.restaurants .restaurants_cards .restaurants_cards_container .card-content .card-txt .card-subtitle {
+  margin: 1px 0px;
 }
 .restaurants .restaurants_cards .restaurants_cards_container .card-content .heart_icon {
   display: flex;
