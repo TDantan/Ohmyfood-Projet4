@@ -7,6 +7,76 @@ a {
   color: black;
 }
 
+/* partie loader */
+.contener_general {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+.contener_mixte {
+  width: 88px;
+  height: 88px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ballcolor {
+  width: 40px;
+  height: 40px;
+}
+
+.ball_1,
+.ball_2,
+.ball_3,
+.ball_4 {
+  position: absolute;
+  animation: animball_one 1.4s infinite ease-in;
+  animation-fill-mode: forwards;
+}
+
+.ball_1 {
+  border: 1px solid #9356DC;
+  top: 0;
+  left: 0;
+}
+
+.ball_2 {
+  border: 1px solid #FF79DA;
+  top: 0;
+  left: 48px;
+}
+
+.ball_3 {
+  border: 1px solid #99E2D0;
+  top: 48px;
+  left: 0;
+}
+
+.ball_4 {
+  border: 1px solid #9356DC;
+  top: 48px;
+  left: 48px;
+}
+
+@keyframes animball_one {
+  0% {
+    position: absolute;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 24px;
+    left: 24px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+    transform: rotate(360deg);
+  }
+}
 /* partie home page */
 .location {
   height: 63px;
