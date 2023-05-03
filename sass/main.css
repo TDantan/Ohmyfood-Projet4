@@ -269,59 +269,59 @@ main .menu .full_menu .desserts .card-content {
   padding: 0;
   overflow: hidden;
 }
-main .menu .full_menu .starters .card-content:hover .card-check,
-main .menu .full_menu .dishes .card-content:hover .card-check,
-main .menu .full_menu .desserts .card-content:hover .card-check {
+main .menu .full_menu .starters .card-content:hover .card-price,
+main .menu .full_menu .dishes .card-content:hover .card-price,
+main .menu .full_menu .desserts .card-content:hover .card-price {
   margin-right: 0;
   transition: all 0.6s;
 }
-main .menu .full_menu .starters .card-content .block-text,
-main .menu .full_menu .dishes .card-content .block-text,
-main .menu .full_menu .desserts .card-content .block-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+main .menu .full_menu .starters .card-content .card-text,
+main .menu .full_menu .dishes .card-content .card-text,
+main .menu .full_menu .desserts .card-content .card-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   padding: 10px;
 }
-main .menu .full_menu .starters .card-content .block-text .card-title h3,
-main .menu .full_menu .dishes .card-content .block-text .card-title h3,
-main .menu .full_menu .desserts .card-content .block-text .card-title h3 {
+main .menu .full_menu .starters .card-content .card-text h3,
+main .menu .full_menu .dishes .card-content .card-text h3,
+main .menu .full_menu .desserts .card-content .card-text h3 {
   margin: 0px;
+  margin-top: 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-main .menu .full_menu .starters .card-content .block-text .card-text,
-main .menu .full_menu .dishes .card-content .block-text .card-text,
-main .menu .full_menu .desserts .card-content .block-text .card-text {
+main .menu .full_menu .starters .card-content .card-text p,
+main .menu .full_menu .dishes .card-content .card-text p,
+main .menu .full_menu .desserts .card-content .card-text p {
+  margin: 0px;
+  margin-top: 7px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main .menu .full_menu .starters .card-content .card-price,
+main .menu .full_menu .dishes .card-content .card-price,
+main .menu .full_menu .desserts .card-content .card-price {
+  margin-right: -90px;
   display: flex;
-  justify-content: space-between;
+  width: 150px;
 }
-main .menu .full_menu .starters .card-content .block-text .card-text p,
-main .menu .full_menu .dishes .card-content .block-text .card-text p,
-main .menu .full_menu .desserts .card-content .block-text .card-text p {
-  margin: 0px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-main .menu .full_menu .starters .card-content .block-text .card-text .price,
-main .menu .full_menu .dishes .card-content .block-text .card-text .price,
-main .menu .full_menu .desserts .card-content .block-text .card-text .price {
-  margin: 0px;
-  margin-left: 16px;
+main .menu .full_menu .starters .card-content .card-price .price,
+main .menu .full_menu .dishes .card-content .card-price .price,
+main .menu .full_menu .desserts .card-content .card-price .price {
+  padding-top: 32px;
+  padding-left: 20px;
+  width: 40px;
   font-weight: 700;
   font-size: 15px;
-  text-overflow: clip;
-  overflow: visible;
 }
-main .menu .full_menu .starters .card-content .card-check,
-main .menu .full_menu .dishes .card-content .card-check,
-main .menu .full_menu .desserts .card-content .card-check {
+main .menu .full_menu .starters .card-content .card-price .card-check,
+main .menu .full_menu .dishes .card-content .card-price .card-check,
+main .menu .full_menu .desserts .card-content .card-price .card-check {
   border-bottom-right-radius: 20px;
-  width: 20%;
-  margin-right: -20%;
+  width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,9 +329,9 @@ main .menu .full_menu .desserts .card-content .card-check {
   background-color: #99E2D0;
   border-top-right-radius: 20px;
 }
-main .menu .full_menu .starters .card-content .card-check .fa-circle-check,
-main .menu .full_menu .dishes .card-content .card-check .fa-circle-check,
-main .menu .full_menu .desserts .card-content .card-check .fa-circle-check {
+main .menu .full_menu .starters .card-content .card-price .card-check .fa-circle-check,
+main .menu .full_menu .dishes .card-content .card-price .card-check .fa-circle-check,
+main .menu .full_menu .desserts .card-content .card-price .card-check .fa-circle-check {
   color: white;
 }
 main .menu a {

@@ -321,69 +321,68 @@ main {
                 overflow: hidden;
 
 
+
                 &:hover {
-                    .card-check {
+                    .card-price {
                         margin-right: 0;
                         transition: all 0.6s;
                     }
                 }
 
-                .block-text {
-
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    width: 100%;
+                .card-text {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                     padding: 10px;
 
-                    .card-title {
-                        h3 {
-                            margin: 0px;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                        }
-
+                    h3 {
+                        margin: 0px;
+                        margin-top: 5px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
 
-                    .card-text {
-                        display: flex;
-                        justify-content: space-between;
-
-                        p {
-                            margin: 0px;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                        }
-
-                        .price {
-                            margin: 0px;
-                            margin-left: 16px;
-                            font-weight: 700;
-                            font-size: 15px;
-                            text-overflow: clip;
-                            overflow: visible;
-                        }
+                    p {
+                        margin: 0px;
+                        margin-top: 7px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
+
                 }
 
-                .card-check {
 
-                    border-bottom-right-radius: 20px;
-                    width: 20%;
-                    margin-right: -20%;
+                .card-price {
+                    margin-right: -90px;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 24px;
-                    background-color: #99E2D0;           
-                    border-top-right-radius: 20px;
+                    width: 150px;
 
-                    .fa-circle-check {
-                        color: white;
+                    .price {
+                        padding-top: 32px;
+                        padding-left: 20px;
+                        width: 40px;
+                        font-weight: 700;
+                        font-size: 15px;
                     }
 
+                    .card-check {
+
+                        border-bottom-right-radius: 20px;
+                        width: 90px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        background-color: #99E2D0;
+                        border-top-right-radius: 20px;
+
+                        .fa-circle-check {
+                            color: white;
+                        }
+
+                    }
                 }
             }
         }
