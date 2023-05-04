@@ -195,7 +195,7 @@ main .restaurant_img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 275px;
+  height: 300px;
 }
 main .menu {
   background-color: #F7F7F7;
@@ -206,6 +206,7 @@ main .menu {
   padding-right: 2.5%;
   padding-top: 25px;
   padding-bottom: 25px;
+  /* Animation apparition par ordre du menu */
 }
 main .menu .menu_title {
   display: flex;
@@ -333,6 +334,27 @@ main .menu .full_menu .starters .card-content .card-price .card-check .fa-circle
 main .menu .full_menu .dishes .card-content .card-price .card-check .fa-circle-check,
 main .menu .full_menu .desserts .card-content .card-price .card-check .fa-circle-check {
   color: white;
+}
+main .menu .starters {
+  animation: appearance 1.1s ease-out forwards;
+}
+main .menu .dishes {
+  animation: appearance 2.5s ease-out forwards;
+}
+main .menu .desserts {
+  animation: appearance 4s ease-out forwards;
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main .menu a {
   display: flex;

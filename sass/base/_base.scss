@@ -234,7 +234,7 @@ main {
         img {
             object-fit: cover;
             width: 100%;
-            height: 275px;
+            height: 300px;
         }
     }
 
@@ -387,6 +387,36 @@ main {
             }
         }
 
+    }
+
+    /* Animation apparition par ordre du menu */
+
+    .starters {
+        animation: appearance 1.1s ease-out forwards;
+    }
+
+    .dishes {
+        animation: appearance 2.5s ease-out forwards;
+    }
+
+    .desserts {
+        animation: appearance 4s ease-out forwards;
+    }
+
+
+    @keyframes appearance {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        70% {
+            opacity: 0.3;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     a {
