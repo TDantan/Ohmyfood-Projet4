@@ -23,6 +23,10 @@ a {
 .search {
   background: #F6F6F6;
   height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .search h1 {
   text-align: center;
@@ -39,6 +43,7 @@ a {
   margin: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .functioning {
@@ -52,6 +57,9 @@ a {
 .functioning .functioning_cards .functioning_cards_step {
   display: flex;
   position: relative;
+}
+.functioning .functioning_cards .functioning_cards_step:hover .fa-solid {
+  color: #9356DC;
 }
 .functioning .functioning_cards .functioning_cards_step p {
   position: absolute;
@@ -356,8 +364,13 @@ main .menu .desserts {
     opacity: 1;
   }
 }
+main .menu .div_btn {
+  display: flex;
+  justify-content: center;
+}
 main .menu a {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 25px;
